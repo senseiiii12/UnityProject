@@ -22,9 +22,13 @@ public class testscript : MonoBehaviour
     void Update()
     {
         float move = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(move * 3 * Time.deltaTime, 0f, 0f);
+        transform.position += new Vector3(move * 10 * Time.deltaTime, 0f, 0f);
+        
+
+
 
         float move1 = Input.GetAxis("Vertical");
-        transform.position += new Vector3(move1 * 3 * 0f, Time.deltaTime, 0f);
+        transform.position += new Vector3(0f, move1 * 10 * Time.deltaTime, 0f);
+        
     }
 }
