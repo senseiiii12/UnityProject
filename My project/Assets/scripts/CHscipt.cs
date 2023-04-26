@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CHscipt : MonoBehaviour
 {
-    public float speed = 8;
+    public float speed = 10;
     public float jumpvalue = 12;
     public float gravity = 20;
     private Vector3 moveDirection = Vector3.zero;
@@ -20,7 +20,7 @@ public class CHscipt : MonoBehaviour
         CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
         {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"),0,Input.GetAxis("Vertical"));
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"),0,0);
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
             if (Input.GetButton("Jump"))
