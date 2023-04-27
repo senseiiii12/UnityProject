@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    CHscipt player;
+    PlayerScript player;
     // Start is called before the first frame update
     void Start()
     {
         Destroy(gameObject, 5);
-        player = GameObject.FindObjectOfType<CHscipt>();
+        player = GameObject.FindObjectOfType<PlayerScript>();
     }
 
     // Update is called once per frame

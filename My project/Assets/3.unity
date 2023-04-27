@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -508,7 +508,6 @@ GameObject:
   - component: {fileID: 1143086928}
   - component: {fileID: 1143086927}
   - component: {fileID: 1143086926}
-  - component: {fileID: 1143086930}
   - component: {fileID: 1143086931}
   m_Layer: 0
   m_Name: Capsule
@@ -600,21 +599,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1143086930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143086925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23f34b43b61fcfa4283d744d9379c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  jumpvalue: 8
-  gravity: 20
 --- !u!114 &1143086931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,6 +611,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50d246239481de4dbb9918c040e93dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points:
+  - {fileID: 1719950743}
+  - {fileID: 1182756414}
+  - {fileID: 1716319966}
+  speed: 10
+  _index: 1
 --- !u!1 &1174575297
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182756415}
   m_Layer: 0
-  m_Name: 'Pont '
+  m_Name: Point2
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -748,7 +738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182756414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 1.88, z: -2}
+  m_LocalPosition: {x: 2.5, y: 2.35, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -954,7 +944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1716319967}
   m_Layer: 0
-  m_Name: Pont
+  m_Name: Point3
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -968,7 +958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716319966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 1.88, z: -2}
+  m_LocalPosition: {x: 5, y: 2.35, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -985,7 +975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1719950744}
   m_Layer: 0
-  m_Name: Pont
+  m_Name: Pont1
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -999,7 +989,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719950743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.88, z: -2}
+  m_LocalPosition: {x: 0, y: 2.35, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
